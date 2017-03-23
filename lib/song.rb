@@ -21,7 +21,7 @@ class Song
     column_names.compact
   end
 
-  self.column_names.each do |col_name|
+  self.column_names.each do |col_name|  #creates the attr_accessors without defining a method. Does this happen as soon as the file gets required
     attr_accessor col_name.to_sym
   end
 
@@ -59,6 +59,3 @@ class Song
   end
 
 end
-
-
-
